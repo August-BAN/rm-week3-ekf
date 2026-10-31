@@ -1,0 +1,29 @@
+# ---- 作业素材：体积大，不入库；clone 后自行放回根目录 ----
+2026-05-20_23-57-31.avi
+2026-05-20_23-57-31.txt
+
+# ---- 大体积产物：仓库里只保留 720p 预览版 MP4 ----
+assets/track_vis.avi
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.deps/
+.venv/
+*.egg-info/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+*.lnk
+
+# ---- 临时文件 ----
+*.tmp
+*.bak
+ppt_text.txt
+
+# ---- 本次会话下载的安装包与便携工具（不入库）----
+downloads/
+tools/git/

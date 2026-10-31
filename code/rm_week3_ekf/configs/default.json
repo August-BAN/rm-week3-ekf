@@ -1,0 +1,80 @@
+{
+  "camera": {
+    "width": 1440,
+    "height": 1080,
+    "fx": 2362.2795952460974,
+    "fy": 2336.1916035376717,
+    "cx": 679.1751392163628,
+    "cy": 529.0685890583763,
+    "dist": [
+      -0.09856159210810156,
+      0.11173066531932681,
+      -0.003835294586710872,
+      -0.0020421443354436304,
+      0.0
+    ],
+    "reproj_error_px": 0.1448
+  },
+  "armor": {
+    "width": 0.27,
+    "height": 0.103,
+    "vehicle_length": 1.1,
+    "vehicle_width": 0.75,
+    "note": "width=两灯条外边缘间距, height=灯条长度 (实测比例 2.62:1); 车体对角 sqrt((L/2)^2+(W/2)^2)=0.66 m 由同帧两板中心距反解"
+  },
+  "imu": {
+    "file": "2026-05-20_23-57-31.txt",
+    "time_offset_s": -0.009,
+    "quat_order": "wxyz"
+  },
+  "detector": {
+    "diff_thresh": 40,
+    "use_close": true,
+    "close_ksize": 3,
+    "min_area": 40.0,
+    "max_len": 320.0,
+    "min_len": 9.0,
+    "max_width": 70.0,
+    "min_aspect": 1.6,
+    "max_aspect": 16.0,
+    "max_tilt_deg": 42.0,
+    "pair_max_angle": 25.0,
+    "pair_h_ratio": [
+      0.55,
+      1.9
+    ],
+    "pair_top_tol": 0.55,
+    "pair_bottom_tol": 0.55,
+    "pair_d_over_h": [
+      0.4,
+      4.6
+    ],
+    "aspect_prior": 2.62,
+    "aspect_sigma": 0.9,
+    "nms_iou": 0.25,
+    "max_dets": 8,
+    "min_score": 0.15
+  },
+  "solver": {
+    "max_reproj": 8.0,
+    "min_z": 0.05
+  },
+  "ekf": {
+    "q_acc": 20.0,
+    "q_alpha": 1.0,
+    "r_pos_lat": 0.02,
+    "r_pos_depth": 0.05,
+    "r_pos_range": 0.01,
+    "r_yaw_base": 1.5,
+    "r_yaw_foreshort": 3.0,
+    "gate_chi2": 80.0,
+    "max_miss": 15,
+    "reinit_miss": 25,
+    "max_pos_step": 0.6,
+    "switch_inflate": 3.0,
+    "ground_constraint": 0
+  },
+  "tracker": {
+    "frame": "world"
+  }
+}
