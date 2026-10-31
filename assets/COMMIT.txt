@@ -1,0 +1,10 @@
+本报告完成时的提交信息:
+  仓库: https://github.com/August-BAN/rm-week3-ekf   (由 Gitee 迁入, 待推送)
+  分支: main + feat/detector, feat/extrinsic-and-sync, feat/vehicle-ekf, feat/report
+        (四条特性分支均以 --no-ff 合并回 main, 与 PR 一一对应)
+  最终 commit: (推送后填写, 可用 git log -1 --format=%H 复核)
+
+说明:
+  本机未安装 Git, 也没有 GitHub 凭据与网络, 报告完成时尚未 git push。
+  代码与产物已就绪在 code/ 与 assets/ 下; 推送步骤见 GITHUB_迁移说明.md。
+  推送完成后请把 commit hash 填到这里, 并同步更新报告的页首与 §9。
