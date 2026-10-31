@@ -1,8 +1,14 @@
 # 从 Gitee 迁到 GitHub —— 操作说明
 
-> 现状：**这台电脑上没装 Git**，也没有 GitHub 凭据和网络，所以代码已经整理成"可推送"的状态，
-> 但最后一步 `git push` 必须在你那边（或装了 Git 的机器上）执行。
-> 全程约 10 分钟。
+> **当前状态：已完成推送。** 仓库 <https://github.com/August-BAN/rm-week3-ekf> 已有
+> `main` + 四条特性分支、42 个文件、10+ 次提交；用的是官方 **MinGit 便携版**
+> （`tools/git/`，免安装、不需要管理员），没有动系统的 Git。
+> 本文保留为**操作记录 / 换机器时的复现步骤**，正常复现只需按 §2~3 推一次即可。
+>
+> 已知未完成项：四条特性分支是本地 `--no-ff` 合并的，**GitHub 上没有 PR 页面**
+> （细粒度 token 只有 `Contents` 权限，`POST /pulls` 返回
+> `Resource not accessible by personal access token`）。补 `Pull requests: Read and write`
+> 后按 §4 重走即可。
 
 ---
 
