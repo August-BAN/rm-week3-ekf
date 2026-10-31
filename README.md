@@ -39,9 +39,11 @@ assets/
 git clone https://github.com/August-BAN/rm-week3-ekf.git
 cd rm-week3-ekf
 
-# 1) 把作业素材放回根目录（体积大，未入库）
-#    2026-05-20_23-57-31.avi
-#    2026-05-20_23-57-31.txt
+# 1) 下载作业素材（体积大，放在 Release 里而不是仓库树里）
+#    https://github.com/August-BAN/rm-week3-ekf/releases/tag/materials
+#      - 2026-05-20_23-57-31.avi  66.98 MB
+#      - 2026-05-20_23-57-31.txt   0.05 MB
+#    两个文件放到当前目录（与 README.md / code/ 同级）
 
 # 2) 装依赖并一键跑完
 python -m pip install -r code/rm_week3_ekf/requirements.txt
@@ -52,8 +54,10 @@ python code/rm_week3_ekf/run_all.py
 
 ## 说明
 
-- **素材与大文件不入库**：原始视频 64 MB、全分辨率标注视频 80 MB 都在 `.gitignore` 里；
-  仓库只保留 26.8 MB 的 720p 预览版，方便直接在线看效果。
+- **素材与大文件不入库**：原始视频 66.98 MB、全分辨率标注视频 80 MB 都在 `.gitignore` 里；
+  素材挂在 [Release `materials`](https://github.com/August-BAN/rm-week3-ekf/releases/tag/materials)，
+  仓库树里只保留 26.8 MB 的 720p 预览版，方便直接在线看效果。
+- Release 里的两个附件带 SHA256，可用 `Get-FileHash` / `shasum -a 256` 校验，详见 Release 说明。
 - 目标车体按长方形建模（1.10 × 0.75 m，对角 0.66 m 由"同帧两板中心距"反解）；
   装甲板是自制件，灯条间距 : 灯条长 ≈ 2.62 : 1，绝对尺度以"板宽 0.27 m"为锚点。
 - 观测者（相机）自身平移没有里程计可用，因此状态本质是**目标相对观测者**的估计，
